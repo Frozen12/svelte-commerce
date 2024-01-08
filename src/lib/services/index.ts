@@ -1,33 +1,33 @@
 // export * from './bigcommerce'
-export * from './litekart'
+// export * from './litekart'
 // export * from './medusa'
 // export * from './shopify'
-// export * from './woocommerce'
+export * from './woocommerce'
 
 // // services.js
 // import { env } from '$env/dynamic/public'
 // import * as Litekart from './litekart'
 // import * as Shopify from './shopify'
-// import * as Woocommerce from './woocommerce'
+import * as Woocommerce from './woocommerce'
 // import * as MedusaJs from './medusa'
 // import * as BigCommerce from './bigcommerce'
 
-// export function getSelectedService(serviceName: string) {
-// 	switch (serviceName) {
+export function getSelectedService(serviceName: string) {
+	switch (serviceName) {
 // 		case 'LITEKART':
 // 			return Litekart
 // 		case 'SHOPIFY':
 // 			return Shopify
-// 		case 'WOOCOMERCE':
-// 			return Woocommerce
+		case 'WOOCOMERCE':
+			return Woocommerce
 // 		case 'MEDUSAJS':
 // 			return MedusaJs
 // 		case 'BIGCOMMERCE':
 // 			return BigCommerce
-// 		default:
-// 			throw new Error(`Invalid service name: ${serviceName}`)
-// 	}
-// }
+		default:
+			throw new Error(`Invalid service name: ${serviceName}`)
+  }
+    }
 
 // const selectedServiceName = env.PUBLIC_SELECTED_SERVICE || 'LITEKART'
 
